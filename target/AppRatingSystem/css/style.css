@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f0f2f5;
+    color: #1a1a2e;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.badge { font-weight: 500; padding: 4px 10px; border-radius: 8px; font-size: 0.8rem; }
+
+.footer { border-top: 1px solid #e9ecef; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card { animation: fadeInUp 0.4s ease; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a8a8a8; }
+
+@media (max-width: 768px) {
+    .sidebar { min-height: auto !important; }
+    .brand-icon-lg { width: 56px; height: 56px; font-size: 28px; }
+    .stat-card { margin-bottom: 12px; }
+}
+
+@media (max-width: 576px) {
+    .container-fluid.p-4 { padding: 16px !important; }
+    .card-body.p-5 { padding: 24px !important; }
+}
